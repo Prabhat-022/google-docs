@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body{
+    margin: 2rem;
+}
+#container .ql-container{
+    height: 80vh;
+
+}
