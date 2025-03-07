@@ -38,7 +38,7 @@ const TextEditor = () => {
 
     //handle the socket connection of users
     useEffect(() => {
-        const socketServer = io('http://localhost:3000/', {
+        const socketServer = io('https://google-docs-backend-three.vercel.app/', {
             transports: ['websocket'],
         })
         setSocket(socketServer);
