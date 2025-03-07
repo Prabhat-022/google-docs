@@ -3,8 +3,8 @@ import { createServer } from 'node:http';
 import { Server } from 'socket.io';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import { connectdb } from './src/db/dbconfig.js';
-import { Document } from './src/model/document.js';
+import { connectdb } from '../src/db/dbconfig.js';
+import { Document } from '../src/model/document.js';
 
 const app = express();
 const server = createServer(app);
