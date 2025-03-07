@@ -13,7 +13,7 @@ dotenv.config();
 const io = new Server(server);
 const port = process.env.PORT || 4000;
 const corsOptions = {
-    origin: "http://localhost:5173/",
+    origin: "https://google-doc-pk.vercel.app/",
     methods: ["GET", "POST"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
@@ -38,7 +38,6 @@ io.on('connection', (socket) => {
         socket.emit("load-document", document.data)
 
         socket.on('send-changes', (delta) => {
-            console.log('delta', delta)
             socket.broadcast.to(documentUrl).emit('receive-changes', delta)
         })
 
@@ -74,8 +73,6 @@ async function findOrCreateDocument(id) {
 
     })
 }
-
-
 
 server.listen(port, () => {
     console.log(`server running at http://localhost:${port}`);

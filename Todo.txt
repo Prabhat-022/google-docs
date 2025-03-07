@@ -1,2 +1,3 @@
 1) Add dropdown button of top right corner of toolbar button when click than show all otherwise remanign hide , toolbar option only show in one line 
-2)
+2) Backend is not install so please fix it on vercel 
+3) Add in the resume links

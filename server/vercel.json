@@ -1,0 +1,4 @@
+{
+    "version": "2.0.0",
+    "rewrites":[{"source":"/","destination":"/index.js"}]
+}
